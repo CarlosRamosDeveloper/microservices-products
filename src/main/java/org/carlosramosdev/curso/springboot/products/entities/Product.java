@@ -18,7 +18,7 @@ public class Product {
     private Double price;
     @Column(name="descripcion")
     private String description;
-    @Column(name="Fecha de creacion")
+    @Column(name="Fecha_de_creacion")
     private LocalDate createAt;
 
 
