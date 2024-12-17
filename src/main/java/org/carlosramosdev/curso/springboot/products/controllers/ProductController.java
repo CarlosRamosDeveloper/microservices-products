@@ -13,7 +13,8 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/products")
+//TODO: Encontrar la forma de recuperar el request mapping manteniendo el LoadBalancer
+//@RequestMapping("/api/products")
 public class ProductController {
     final IProductService service;
 
