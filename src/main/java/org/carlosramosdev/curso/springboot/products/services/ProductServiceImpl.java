@@ -35,4 +35,16 @@ public class ProductServiceImpl implements IProductService{
     public Optional<Product> findById(Long id) {
         return repository.findById(id);
     }
+
+    @Override
+    @Transactional
+    public Product save(Product product) {
+        return this.repository.save(product);
+    }
+
+    @Override
+    @Transactional
+    public void deleteById(Long id) {
+        repository.deleteById(id);
+    }
 }
